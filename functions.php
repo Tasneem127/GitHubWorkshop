@@ -22,3 +22,12 @@ function isPrime($num) {
     }
     return true;
 }
+
+//4- Function to find the factorial of a number
+function findFactorial($num) {
+    $factorial = 1;
+    for ($i = 1; $i <= $num; $i++) {
+        $factorial *= $i;
+    }
+    return $factorial;
+}
