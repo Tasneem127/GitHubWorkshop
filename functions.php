@@ -31,3 +31,9 @@ function findFactorial($num) {
     }
     return $factorial;
 }
+
+//5- Function to sort an array in ascending order
+function sortArrayAscending($arr) {
+    sort($arr);
+    return $arr;
+}
