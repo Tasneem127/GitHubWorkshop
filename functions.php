@@ -38,10 +38,26 @@ function sortArrayAscending($arr) {
     return $arr;
 }
 
-//6- Function to convert Celsius to Fahrenheit
+// Function to convert Celsius to Fahrenheit
 function celsiusToFahrenheit($celsius) {
     $fahrenheit = ($celsius * 9/5) + 32;
     return $fahrenheit;
 }
 
+// Enhance the 6th function
+
+function Enhance_celsiusToFahrenheit($celsius, $precision = 2) {
+    // Check if the input is a valid number
+    if (!is_numeric($celsius)) {
+        return "Invalid input. Please provide a numeric value.";
+    }
+
+    // Perform the conversion
+    $fahrenheit = ($celsius * 9/5) + 32;
+
+    // Round the result to the specified precision
+    $fahrenheit = round($fahrenheit, $precision);
+
+    return $fahrenheit;
+}
 ?>
